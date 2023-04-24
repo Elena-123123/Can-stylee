@@ -1,0 +1,123 @@
+// main: style.less
+
+
+.future {
+    background-color: @primeryColor;
+    padding-bottom: 65px;
+}
+
+.future-body-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.future-block {
+    padding: 27px;
+
+    // & img {
+    //     padding: 30px;
+    // }
+
+    & p {
+        text-align: center;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 22px;
+        color: @subtitleColor;
+    }
+}
+
+.future-icon {
+    &::after {
+        content: '?';
+        display: inline-block;
+        right: 2px;
+        width: 40px;
+        height: 40px;
+        color: white;
+        background-color: @secondaryColor;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        z-index: 2;
+    }
+
+}
+
+.future-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.future-marked {
+    background-color: black;
+    z-index: 3;
+    padding: 10px;
+
+    & img {
+        padding: 50px 2px 21px 47px;
+    }
+
+    & p {
+        text-align: center;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 22px;
+        color: @subtitleColor;
+        margin-top: 12px;
+    }
+}
+
+.future-marked:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.page-head {
+    & h3 {
+        color: @titleColor;
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 36%;
+            background: @secondaryColor;
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            height: 1px;
+            width: 64%;
+            background: #e2e5ea;
+            z-index: 2;
+        }
+    }
+}
+
+.page-content-1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 18px;
+}
+
+
+
+.img-fut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

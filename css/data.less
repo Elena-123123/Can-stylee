@@ -1,0 +1,74 @@
+// main: style.less
+
+
+
+.data {
+    background-color: @primeryColor;
+
+    .data-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.data-container {
+    padding-bottom: 30px;
+}
+
+.data-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form-data {
+        display: block;
+        width: 350px;
+        height: 50px;
+        border: 1px solid white;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        margin: 30px 15px 0px 0px;
+    }
+
+}
+
+.form-btn p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+    margin: 15px 0px 0px 60px;
+}
+
+.data-title {
+    position: relative;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    color: @subtitleColor;
+    padding: 50px 0px 30px 0px;
+    margin-top: 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 46%;
+        background: @secondaryColor;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        height: 1px;
+        width: 56%;
+        background: #e2e5ea;
+        z-index: 2;
+    }
+
+}

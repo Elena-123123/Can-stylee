@@ -1,0 +1,130 @@
+// main: style.less
+
+
+.module-item {
+    margin-bottom: 68px;
+}
+
+.module-item--item-1 {
+    padding-right: 15px;
+}
+
+.module-item--item-2 {
+    padding-left: 15px;
+}
+
+.module-item {
+    display: flex;
+    justify-content: center;
+
+    .item-title-1 {
+        position: relative;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 23px;
+        color: #818995;
+        margin-top: 58px;
+        margin-bottom: 33px;
+        padding-bottom: 15px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 50%;
+            background: @secondaryColor;
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            height: 1px;
+            width: 50%;
+            background: #e2e5ea;
+            z-index: 2;
+        }
+
+    }
+
+    .item-title-2 {
+        position: relative;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 23px;
+        color: #818995;
+        margin-top: 58px;
+        margin-bottom: 33px;
+        padding-bottom: 15px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 50%;
+            background: @secondaryColor;
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            height: 1px;
+            width: 57%;
+            background: #e2e5ea;
+            z-index: 2;
+        }
+    }
+
+    .item-content-1 {
+        background: @secondaryColor;
+        align-self: stretch;
+        padding: 32px;
+    }
+
+    .item-content-2 {
+        background: #F3F3F3;
+        padding: 32px;
+        align-self: stretch;
+    }
+
+    .item-content--list-1 {
+        li {
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 32px;
+            padding-right: 20px;
+
+            & svg {
+                margin-bottom: -5px;
+            }
+        }
+    }
+
+    .item-content--list-2 li {
+        color: #000000;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 32px;
+        padding-right: 20px;
+
+        & svg {
+            margin-bottom: -5px;
+        }
+    }
+}

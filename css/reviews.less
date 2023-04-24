@@ -1,0 +1,123 @@
+// main: style.less
+
+
+.reviews-svg {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.num-reviews {
+    background-color: black;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+    height: 40px;
+    padding-top: 13px;
+}
+
+.svg-p {
+    padding: 0px 76px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 31px;
+}
+
+.reviews-page {
+    & span {
+        display: block;
+        border: 1px solid #E2E5EA;
+        transform: rotate(180deg);
+        width: 99%;
+    }
+}
+
+.title-reviews {
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 12%;
+        background: @secondaryColor;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        height: 1px;
+        width: 88%;
+        background: #e2e5ea;
+        z-index: 0;
+    }
+}
+
+.title-reviews-page {
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 26%;
+        background: @secondaryColor;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        height: 1px;
+        width: 74%;
+        background: #e2e5ea;
+        z-index: 2;
+    }
+}
+
+.reviews-page {
+    margin-top: 60px;
+}
+
+.reviews-block-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 18px;
+
+    .item-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reviews-items-content {
+        display: block;
+        background: #F3F3F3;
+        padding: 10px;
+        width: 260px;
+        height: 262px;
+    }
+
+    .item-text {
+        text-align: center;
+        padding: 20px;
+
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
